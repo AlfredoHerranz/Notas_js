@@ -17,5 +17,5 @@
     }
 
     $tarea = new modificar_tarea();
-    print_r($tarea->mostrarDatos());
+    echo json_encode($tarea->mostrarDatos("tarea"));
 ?>
