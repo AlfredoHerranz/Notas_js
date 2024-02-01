@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: rgb(217, 255, 2);
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#id_divbuscar{
+    display: flex;
+    justify-content: end;
+}
+
+#id_tbuscar{
+    height: 25px;
+    
+}
+
+#id_descripcion{
+    padding: 2px 2px 200px 2px;
+}
+
+#id_tbuscar, #id_nombre, #id_descripcion{
+    background-color: rgb(240, 234, 226);
+    border-radius: 10px;
+}
+
+#id_bbuscar{
+    height: 31px;
+    background-color: rgba(8, 85, 8, 0.541);
+    color: white;
+    border-radius: 10px;
+}
+
+#id_contenedor{
+    margin: 50px auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#id_insertar{
+    background-color: rgb(241, 240, 240);
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 0px 25px;
+}
+
+#id_insertar form{
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+    flex-direction: column;
+}
+
+#id_insertar form div{
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#id_guardar{
+    background-color: rgba(8, 85, 8, 0.541);
+    color: white;
+    border-radius: 10px;
+}
+
+#id_tabla{
+    width: 800px;
+}
+
+#id_tabla th{
+    width: 200px;
+}
+
+#id_tabla #id_id{
+    width: 50px;
+}
+
+#id_tabla #id_nombreTabla{
+    width: 90px;
+}
+
+#id_tabla #id_descripcionTabla{
+    width: 200px;
+}
+
+#id_tabla #id_botones{
+    width: 100px;
+}

@@ -4,34 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Tareas</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
+        <h1>GESTOR DE TAREAS</h1>
         <div id="id_divbuscar">
             <form action="" method="post">
-                <input type="text" id="id_tbuscar">
-                <input type="button" value=">buscar" id="id_bbuscar">
+                <input type="text" id="id_tbuscar" placeholder="Buscar">
+                <input type="button" value="Buscar" id="id_bbuscar">
             </form>
         </div>
     </header>
 
-    <div id="id_insertar">
-        <form action="" method="POST">
-            <input type="text" id="id_nombre" name="nombre">
-            <textarea name="descripcion" id="id_descripcion" cols="30" rows="10"></textarea>
-            <input type="submit" value="Guardar Tarea" id="id_guardar" name="guardar">
-        </form>
-    </div>
-    <div id="id_listado_buscar"></div>
-    <div id="id_listado_general">
-        <table id="id_tabla">
-            <tr>
-                <th>Id</th>
-                <th>Nombre</th>
-                <th>Descripción</th>
-                <th></th>
-            </tr>
-        </table>
+    <div id="id_contenedor">
+        <div id="id_insertar">
+            <form action="" method="POST">
+                <div>
+                    <input type="text" id="id_nombre" name="nombre" placeholder="Nombre">
+                    <input type="text" id="id_descripcion" name="descripcion" placeholder="Descripción">
+                </div>
+                <input type="submit" value="Guardar Tarea" id="id_guardar" name="guardar">
+            </form>
+        </div>
+        <div id="id_listado_buscar"></div>
+        <div id="id_listado_general">
+            <table id="id_tabla">
+                <tr>
+                    <th id="id_id">Id</th>
+                    <th id="id_nombreTabla">Nombre</th>
+                    <th id="id_descripcionTabla">Descripción</th>
+                    <th id="id_botones"></th>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 </html>
