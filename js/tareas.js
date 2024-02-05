@@ -4,7 +4,7 @@ $(document).ready(function () {
         $("#id_listado_buscar").css("display", "block");
         filtrar();
     });
-    $("")
+    $("#id_guardar").click(()=>{insertar_tarea()});
         
 });
 
@@ -41,6 +41,20 @@ function mostrar_tareas(){
                 $('<button class="modificar"/>').val(element.id).text("Modificar").appendTo("#id_boton"+element.id);
                 $('<button class="eliminar"/>').val(element.id).text("Eliminar").appendTo("#id_boton"+element.id);
             });
+        }
+    });
+}
+
+function insertar_tarea(){
+    console.log($("#id_nombre").val());
+    $.ajax({
+        type: "post",
+        url: "php/insertar.php",
+        data: {nombre: $("#id_nombre").val(), descripcion: $("#id_descripcion").val(),nocache: Math.random()},
+        dataType: "json",
+        success: function (response) {
+            console.log("Insertado");
+            mostrar_tareas();
         }
     });
 }

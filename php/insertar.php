@@ -17,5 +17,5 @@
     }
 
     $tarea = new insertar_tarea();
-    echo $tarea->insertar("tarea1", "test1");
+    echo $tarea->insertar($_POST["nombre"], $_POST["descripcion"]);
 ?>
