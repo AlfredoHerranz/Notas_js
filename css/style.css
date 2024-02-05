@@ -28,6 +28,7 @@ h1{
 
 #id_descripcion{
     padding: 2px 2px 200px 2px;
+    resize: none;
 }
 
 #id_tbuscar, #id_nombre, #id_descripcion{
@@ -54,6 +55,9 @@ h1{
     border: 1px solid;
     border-radius: 10px;
     padding: 0px 25px;
+    width: 300px;
+    margin-left: 200px;
+    margin-top: 80px;
 }
 
 #id_insertar form{
@@ -61,9 +65,11 @@ h1{
     justify-content: space-around;
     height: 400px;
     flex-direction: column;
+    padding: 20px;
 }
 
-#id_insertar form div{
+#id_listado{
+    margin-right: 20px;
     display: flex;
     height: 70%;
     flex-direction: column;
