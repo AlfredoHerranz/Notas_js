@@ -84,6 +84,10 @@ h1{
     width: 200px;
 }
 
+#id_tabla td{
+    text-align: center;
+}
+
 #id_tabla #id_id{
     width: 50px;
 }
