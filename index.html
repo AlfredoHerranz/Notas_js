@@ -19,29 +19,33 @@
         </div>
     </header>
 
-    <div id="id_insertar">
-        <form action="" method="POST">
-            <input type="text" id="id_nombre" name="nombre" placeholder="Nombre">
-            <textarea name="descripcion" id="id_descripcion" cols="30" rows="10" placeholder="Descripción"></textarea>
-            <input type="submit" value="Guardar Tarea" id="id_guardar" name="guardar">
-        </form>
-    </div>
-    <div id="id_listado">
-        <div id="id_listado_buscar"></div>
-        <div id="id_listado_general">
-            <table id="id_tabla">
-                <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Nombre</th>
-                        <th>Descripción</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    
-                </tbody>
-            </table>
+    <div id="id_cuerpo">
+        <div id="id_insertar">
+            <form action="" method="POST">
+                <input type="text" id="id_nombre" name="nombre" placeholder="Nombre">
+                <textarea name="descripcion" id="id_descripcion" cols="30" rows="10" placeholder="Descripción"></textarea>
+                <input type="submit" value="Guardar Tarea" id="id_guardar" name="guardar">
+            </form>
+        </div>
+        <div id="id_listado">
+            <div>
+                <table id="id_listado_buscar"></table>
+            </div>
+            <div id="id_listado_general">
+                <table id="id_tabla">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Descripción</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </body>
