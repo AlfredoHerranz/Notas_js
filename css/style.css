@@ -71,6 +71,10 @@ h1{
     padding: 20px;
 }
 
+#id_insertar form input, #id_insertar form textarea{
+    padding-left: 15px;
+}
+
 #id_listado{
     padding: 0px 25px;
     width: fit-content;
@@ -79,7 +83,7 @@ h1{
 
 #id_listado_buscar{
     display: none;
-    width: 1000px;
+    width: 100%;
     border: 1px solid;
     background-color: rgb(241, 240, 240);
     border-radius: 10px;
@@ -87,12 +91,11 @@ h1{
 }
 
 .eliminar{
-    background-color: red;
-    color: white;
+    background-color: rgb(190, 216, 214);
 }
 
 .modificar{
-    background-color:khaki;
+    background-color:rgb(188, 249, 244);
 }
 
 .eliminar, .modificar{
@@ -106,7 +109,7 @@ h1{
 }
 
 #id_tabla{
-    width: 1000px;
+    width: 100%;
     border: 1px solid;
     background-color: rgb(241, 240, 240);
     border-radius: 10px;
