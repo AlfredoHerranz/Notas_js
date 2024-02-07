@@ -26,6 +26,7 @@ $(document).ready(function () {
     //Botones de la tabla
     $("table").click((e)=> {
         if($(e.target).attr("eliminar")){
+            $("#listado_buscar_div").slideUp(100);
             eliminar(e);
         }else if($(e.target).attr("modificar")){
             modificar(e);
