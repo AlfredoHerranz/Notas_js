@@ -3,9 +3,9 @@ $(document).ready(function () {
     //Boton para filtrar las tareas
     $("#id_bbuscar").click(()=> { 
         if($("#id_tbuscar").val() == ""){
-            $("#id_listado_buscar").css("display", "none");    
+            $("#listado_buscar_div").slideUp(300);    
         }else{
-            $("#id_listado_buscar").css("display", "block");
+            $("#listado_buscar_div").slideDown(300);
             filtrar();
         }
     });
@@ -13,7 +13,6 @@ $(document).ready(function () {
     //Boton del formulario para insertar datos
     $("#id_guardar").click(()=>{
         //Si el formulario está en modo insertar tareas
-        console.log($("#id_guardar").val());
         if($("#id_guardar").val()=="Guardar Tarea"){
             insertar_tarea()
         }
