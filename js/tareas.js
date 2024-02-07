@@ -73,16 +73,23 @@ function mostrar_tareas(){
 
 //Funcion para insertar la tarea
 function insertar_tarea(){
-    $.ajax({
-        type: "post",
-        url: "php/insertar.php",
-        data: {nombre: $("#id_nombre").val(), descripcion: $("#id_descripcion").val(),nocache: Math.random()},
-        dataType: "json",
-        success: function (response) {
-            console.log("Insertado");
-            mostrar_tareas();
-        }
-    });
+    if($("#id_nombre").val()==""){
+        window.alert("Introduce un nombre de la tarea");
+
+    }else if($("#id_descripcion").val()==""){
+        window.alert("Introduce una descripción de la tarea");
+    }else{
+        $.ajax({
+            type: "post",
+            url: "php/insertar.php",
+            data: {nombre: $("#id_nombre").val(), descripcion: $("#id_descripcion").val(),nocache: Math.random()},
+            dataType: "json",
+            success: function (response) {
+                console.log("Insertado");
+                mostrar_tareas();
+            }
+        });
+    }
 }
 
 //Funcion para borrar la tarea
