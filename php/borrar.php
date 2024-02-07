@@ -17,5 +17,5 @@
     }
 
     $tarea = new borrar_tarea();
-    echo $tarea->borrar("1");
+    echo $tarea->borrar($_POST["id"]);
 ?>
